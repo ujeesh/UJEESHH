@@ -1,1 +1,398 @@
-https://019e9d65-be65-7bcd-a2d5-f65fedf8121e.arena.site/
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ujeesh U | Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#0a0a0f;
+    color:white;
+    overflow-x:hidden;
+}
+
+/* Animated Background */
+body::before{
+    content:'';
+    position:fixed;
+    width:600px;
+    height:600px;
+    background:radial-gradient(circle,#6d28d9 0%,transparent 70%);
+    top:-250px;
+    left:-250px;
+    opacity:.25;
+    z-index:-1;
+}
+
+body::after{
+    content:'';
+    position:fixed;
+    width:500px;
+    height:500px;
+    background:radial-gradient(circle,#06b6d4 0%,transparent 70%);
+    bottom:-250px;
+    right:-250px;
+    opacity:.2;
+    z-index:-1;
+}
+
+/* Navbar */
+nav{
+    position:fixed;
+    width:100%;
+    top:0;
+    background:rgba(10,10,15,.85);
+    backdrop-filter:blur(15px);
+    border-bottom:1px solid rgba(255,255,255,.08);
+    z-index:1000;
+}
+
+.nav-container{
+    max-width:1200px;
+    margin:auto;
+    padding:18px 25px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    font-size:1.4rem;
+    font-weight:700;
+    background:linear-gradient(90deg,#8b5cf6,#06b6d4);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:25px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#06b6d4;
+}
+
+/* Hero */
+.hero{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:120px 20px 50px;
+}
+
+.hero-content{
+    max-width:850px;
+}
+
+.hero h1{
+    font-size:4rem;
+    margin-bottom:15px;
+    background:linear-gradient(90deg,#ffffff,#8b5cf6,#06b6d4);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+.hero h2{
+    color:#cbd5e1;
+    font-weight:400;
+    margin-bottom:20px;
+}
+
+.hero p{
+    color:#94a3b8;
+    line-height:1.8;
+    font-size:1.05rem;
+    margin-bottom:35px;
+}
+
+.btn{
+    display:inline-block;
+    padding:14px 30px;
+    border-radius:50px;
+    text-decoration:none;
+    color:white;
+    background:linear-gradient(135deg,#8b5cf6,#06b6d4);
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:translateY(-4px);
+    box-shadow:0 10px 25px rgba(139,92,246,.4);
+}
+
+/* Sections */
+section{
+    max-width:1200px;
+    margin:auto;
+    padding:90px 25px;
+}
+
+.section-title{
+    text-align:center;
+    font-size:2.5rem;
+    margin-bottom:50px;
+    color:#fff;
+}
+
+/* Cards */
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:rgba(255,255,255,.04);
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:20px;
+    padding:30px;
+    transition:.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    border-color:#8b5cf6;
+}
+
+.card h3{
+    margin-bottom:15px;
+    color:#06b6d4;
+}
+
+.card p{
+    color:#cbd5e1;
+    line-height:1.7;
+}
+
+/* Skills */
+.skills{
+    display:flex;
+    flex-wrap:wrap;
+    gap:15px;
+    justify-content:center;
+}
+
+.skill{
+    padding:12px 20px;
+    border-radius:30px;
+    background:rgba(139,92,246,.15);
+    border:1px solid rgba(139,92,246,.4);
+}
+
+/* Contact */
+.contact{
+    text-align:center;
+}
+
+.contact-box{
+    max-width:700px;
+    margin:auto;
+    background:rgba(255,255,255,.04);
+    padding:40px;
+    border-radius:20px;
+    border:1px solid rgba(255,255,255,.08);
+}
+
+.contact p{
+    margin:15px 0;
+    color:#cbd5e1;
+}
+
+.contact a{
+    color:#06b6d4;
+    text-decoration:none;
+}
+
+footer{
+    text-align:center;
+    padding:25px;
+    color:#64748b;
+    border-top:1px solid rgba(255,255,255,.05);
+}
+
+@media(max-width:768px){
+
+.hero h1{
+    font-size:2.7rem;
+}
+
+nav ul{
+    display:none;
+}
+
+.section-title{
+    font-size:2rem;
+}
+
+}
+</style>
+</head>
+<body>
+
+<nav>
+    <div class="nav-container">
+        <div class="logo">UJEESH U</div>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+<section class="hero">
+    <div class="hero-content">
+        <h1>UJEESH U</h1>
+        <h2>BCA Student • Data Analytics Enthusiast • Programmer</h2>
+
+        <p>
+            Motivated and detail-oriented BCA third-year student with a strong
+            foundation in programming, database management, networking, and
+            data analysis. Passionate about technology-driven solutions and
+            continuously expanding technical expertise through internships,
+            certifications, and hands-on projects.
+        </p>
+
+        <a href="#contact" class="btn">Connect With Me</a>
+    </div>
+</section>
+
+<section id="about">
+    <h2 class="section-title">About Me</h2>
+
+    <div class="grid">
+        <div class="card">
+            <h3>Academic Background</h3>
+            <p>
+                Currently pursuing Bachelor of Computer Applications (BCA),
+                Third Year, with a keen interest in software development,
+                data analytics, and emerging technologies.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Professional Growth</h3>
+            <p>
+                Actively enhancing technical skills through industry exposure,
+                certifications, practical learning experiences, and
+                collaborative projects.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Career Objective</h3>
+            <p>
+                Seeking opportunities in Data Analytics, Programming,
+                Software Development, and technology-driven domains where
+                analytical and technical skills can contribute effectively.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section id="skills">
+    <h2 class="section-title">Technical Skills</h2>
+
+    <div class="skills">
+        <div class="skill">Python</div>
+        <div class="skill">C Programming</div>
+        <div class="skill">SQL</div>
+        <div class="skill">Microsoft Excel</div>
+        <div class="skill">Computer Networking</div>
+        <div class="skill">Database Management</div>
+        <div class="skill">Data Analytics</div>
+        <div class="skill">Problem Solving</div>
+    </div>
+</section>
+
+<section id="experience">
+    <h2 class="section-title">Experience & Certifications</h2>
+
+    <div class="grid">
+
+        <div class="card">
+            <h3>Internship</h3>
+            <p>
+                Currently undertaking an internship at IIT Palakkad,
+                gaining practical exposure to academic and technical
+                environments while working on real-world tasks and projects.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>IIT Bombay Certifications</h3>
+            <p>
+                Successfully completed online add-on courses offered by
+                IIT Bombay in areas including e-Sim, GIMP, and other
+                technology-oriented learning modules.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Professional Networking</h3>
+            <p>
+                Maintains an active LinkedIn presence with a growing
+                professional network and engagement within technology
+                and career-focused communities.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<section id="contact" class="contact">
+    <h2 class="section-title">Contact</h2>
+
+    <div class="contact-box">
+
+        <p><strong>Name:</strong> Ujeesh U</p>
+
+        <p>
+            <strong>Phone:</strong>
+            <a href="tel:+919447583729">+91 9447583729</a>
+        </p>
+
+        <p>
+            <strong>LinkedIn:</strong>
+            <a href="https://www.linkedin.com/in/ujeesh-u-analytics"
+               target="_blank">
+               linkedin.com/in/ujeesh-u-analytics
+            </a>
+        </p>
+
+        <p>
+            Open to opportunities in Data Analytics, Software Development,
+            Programming, Database Management, and related technology roles.
+        </p>
+
+    </div>
+</section>
+
+<footer>
+    © 2026 Ujeesh U • Portfolio Website
+</footer>
+
+</body>
+  </html>
